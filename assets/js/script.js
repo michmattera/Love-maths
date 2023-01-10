@@ -13,8 +13,13 @@ document.addEventListener("DOMContentLoaded" , function(){
     }
 })
 
-
+/**
+ * The main game "loop" when the first page is loaded
+ * and after the main answer has been processed
+ */
 function runGame() {
+    let num1 = Math.floor(Math.random() * 25) + 1;
+    let num2 = Math.floor(Math.random() * 25) + 1;
 
 }
 
