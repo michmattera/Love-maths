@@ -71,12 +71,22 @@ function calculateCorrectAnswer() {
 
 }
 
+/**
+ * Gets the current score from dom and increment score by 1
+ */
 function incrementScore() {
 
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
 }
 
+/**
+ * Gets the current incorrect answer from dom and increment score by 1
+ */
 function incrementWrongAnswer() {
-
+    
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
 }
 
 function displayAdditionQuestion(operand1, operand2) {
